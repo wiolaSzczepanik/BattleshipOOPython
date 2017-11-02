@@ -1,6 +1,6 @@
 import sys
 import os
-from ocean import Ocean
+from board import Board
 from player import HumanPlayer
 # import ship
 # import square
@@ -55,9 +55,9 @@ def start_multi_player_mode():
 
 def play_game(player1, player2):
 
-    print("Player1 place shipes on his board")
+    print("Player1 place ships on his board")
     board1 = player1.place_ships()
-    print("Player2 place shipes on his board")
+    print("Player2 place ships on his board")
     board2 = player2.place_ships()
     while True:
         player1.strike(board2)
